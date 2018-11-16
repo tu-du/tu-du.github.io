@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 72.037 72.037">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #262626;
+        fill-rule: evenodd;
+      }
+
+      .cls-3 {
+        fill: none;
+        stroke: #262626;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-4 {
+        filter: url(#Ellipse_59);
+      }
+    </style>
+    <filter id="Ellipse_59" x="0" y="0" width="72.037" height="72.037" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="add_task" data-name="add task" transform="translate(9 6)">
+    <g class="cls-4" transform="matrix(1, 0, 0, 1, -9, -6)">
+      <circle id="Ellipse_59-2" data-name="Ellipse 59" class="cls-1" cx="27.019" cy="27.019" r="27.019" transform="translate(9 6)"/>
+    </g>
+    <path id="Path_8" data-name="Path 8" class="cls-2" d="M9.006,7.2V.9a.9.9,0,0,0-.9-.9.851.851,0,0,0-.9.9V7.2H.9a.851.851,0,0,0-.9.9.851.851,0,0,0,.9.9H7.2v6.3a.9.9,0,0,0,.9.9.851.851,0,0,0,.9-.9v-6.3h6.3a.9.9,0,0,0,.9-.9.851.851,0,0,0-.9-.9Z" transform="translate(18.913 18.913)"/>
+    <path id="Path_181" data-name="Path 181" class="cls-3" d="M1,19.012H1a27.039,27.039,0,0,1,50.975,0" transform="translate(0.801 -1)"/>
+  </g>
+</svg>

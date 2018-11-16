@@ -1,0 +1,300 @@
+body {
+  font-family: helvetica, sans-serif;
+  font-size: 14px;
+  background-color: #FFFDF5;
+  color: #262626;
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 1em 0;
+  text-align: center;
+  font-family: garamond, serif;
+  background-color: #003DAA;
+  color: #FFFDF5;
+}
+
+h2 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #003DAA;
+  padding-bottom: 2em;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #262626;
+  padding-bottom: 0.75em;
+}
+
+button {
+  padding: 1em;
+  background-color: #f1f1f1;
+  margin-bottom: 1em;
+  border: 1px solid #262626;
+  border-radius: 3px;
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid #262626;
+  width: 280px;
+  background-color: #FFFDF5;
+  font-size: 14px;
+  font-weight: bold;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+input:focus {
+  outline: none;
+}
+
+.container {
+  padding: 2em;
+}
+
+.newTaskButton {
+  width: 80px;
+  height: auto;
+  border: none;
+  position: absolute;
+  top: 2em;
+  right: 1.5em;
+  background-color: transparent;
+}
+
+.list {
+  display: grid;
+  grid-row-gap: 0.25em;
+}
+
+.listItem {
+  font-size: 18px;
+  padding-top: 1em;
+}
+
+.dateDue {
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #466DDB;
+}
+
+.listItemName {
+  padding-bottom: 0.5em;
+  padding-top: 0.25em;
+}
+
+.sublist {
+  display: grid;
+  padding: 1em 0;
+  font-size: 15px;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-bottom: 1px solid #466DDB;
+}
+
+.taskAttribute {
+  display: flex;
+  position: relative;
+  color: #466DDB;
+  border-radius: 20px;
+  border: 2px solid #466DDB;
+  width: 100px;
+  justify-content: center;
+  padding: 0.5em;
+  font-size: 12px;
+}
+
+.loginGraphic {
+  width: 100%;
+  height: auto;
+}
+
+.loginContainer {
+  text-align: left;
+  padding-top: 0.5em;
+  padding-left: 2em;
+}
+
+.loginWelcome {
+  font-size: 34px;
+  font-weight: bold;
+  color: #262626;
+  padding-bottom: 2em;
+}
+
+.emailField, .passwordField {
+  display: grid;
+  padding: 1em 0;
+  width: 250px;
+  background-color: #FFFDF5;
+  font-size: 10px;
+  font-weight: bold;
+  color: #999999;
+}
+
+.loginButtonContainer, .createTaskButtonContainer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.loginButton, .createTaskButton {
+  width: 100%;
+  background-color: #003DAA;
+  padding: 1.5em;
+  color: #FFFDF5;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 0;
+  margin: 0;
+}
+
+.newTaskForm {
+  display: grid;
+  padding-top: 4em;
+  margin: auto;
+  justify-content: center;
+  width: 320px;
+}
+
+.closeWindow {
+  width: 40px;
+  height: auto;
+  border: none;
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  background-color: transparent;
+}
+
+.taskInput {
+  padding-top: 1.5em;
+}
+
+::placeholder {
+  color: #466DDB;
+  text-align: center;
+  opacity: 0.5;
+  padding-top: 0.5em;
+}
+
+.formSectionTitle {
+  padding: 1.5em 0;
+  font-weight: bold;
+  color: #003DAA;
+}
+
+.checkboxContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.difficultySelect input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.difficultySelect:hover {
+  background-color: #003DAA;
+  color: #FFFDF5;
+  font-weight: bold;
+}
+
+.difficultySelect {
+  display: flex;
+  position: relative;
+  cursor: pointer;
+  color: #003DAA;
+  border-radius: 20px;
+  border: 1px solid #003DAA;
+  width: 85px;
+  justify-content: center;
+  margin: auto;
+  padding: 0.5em;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.navMenu {
+  display: grid;
+  grid-row-gap: 0.25em;
+  padding: 1em;
+  margin: auto;
+  width: 320px;
+}
+
+.closeMenu {
+  margin-bottom: 4em;
+}
+
+.navSection {
+  padding-bottom: 2em;
+}
+
+.remindersContainer {
+  box-shadow: 0px 8px 40px 0 rgba(0, 0, 0, 0.2);
+}
+
+.reminderslistItem {
+  padding: 2em;
+  border-bottom: 1px solid lightgrey;
+}
+
+.profilePic {
+  padding: 2em 4em 0 4em;
+}
+
+.profileInfo {
+  background-color: white;
+  width: 250px;
+  height: auto;
+  padding: 1em;
+  border: 1px solid lightgrey;
+  color: #999999;
+  font-size: 12px;
+  position: absolute;
+  bottom: -40px;
+  box-shadow: 6px 8px 40px 0 rgba(0, 0, 0, 0.2);
+}
+
+.profileName {
+  font-size: 32px;
+  font-weight: bold;
+  color: #262626;
+  padding-bottom: 0.25em;
+}
+
+.profileContainer {
+  position: relative;
+}
+
+
+.bottom {
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  padding: 15px;
+  bottom: 0;
+  left: 0;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  border-top: 1px solid lightgrey;
+  box-shadow: 0pxpx 40px 2px lightgrey;
+}
+
+.bottom li {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35%;
+  height: 35%;
+}
