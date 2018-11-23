@@ -13,7 +13,7 @@ var currPage = '/home';
 window.addEventListener('load', (e) => {
 
   // Draw the first page
-  goToPage('/home');
+  goToPage(currPage);
 
   // If we hit our history button, redraw the page
   window.addEventListener('popstate', event => {

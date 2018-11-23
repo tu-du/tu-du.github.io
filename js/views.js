@@ -25,8 +25,8 @@ let navigation = `
 <div class="container">
   <a href="/newTask"><input type="image" class="newTaskButton" src="img/icons/addtask-button.svg"></input></a>
 
-  <div class="list">
-
+  <div class="list" id="assignment-list">
+<!--
     <div class="listItem">
       <p class="listItemName">Interactive Systems Timeline</p>
       <p class="dateDue">October 26</p>
@@ -56,8 +56,8 @@ let navigation = `
         <p class="taskAttribute">Difficult</p>
       </div>
     </div>
-
-
+-->
+  </div>
   <ul class="bottom">
       <li><a href="/whatDay"><img src="img/nav/calendar.svg"></a></li>
       <li><img src="img/nav/list-selected.svg"></li>
@@ -157,7 +157,7 @@ let addTask = `
   <a href="/clickMe"><input type="image" class="closeWindow" src="img/icons/no.png"></input></a>
 
   <div class="taskInput">
-  <input type="text" placeholder="ENTER TASK NAME">
+  <input type="text" placeholder="ENTER TASK NAME" id="assignmentNameInput">
 </div>
 
 <div class="taskInput">
@@ -206,7 +206,7 @@ let addTask = `
   <p class="formSectionTitle">SELECT DEADLINE</p>
 </div>
 
-  <a href="/clickMe"><p class="createTaskButtonContainer"><button class="createTaskButton">Create Task</button></p></a>
+  <p class="createTaskButtonContainer"><button class="createTaskButton" id="createNewTaskBtn">Create Task</button></p>
 `;
 
 let reminderPage = `
