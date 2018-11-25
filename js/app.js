@@ -26,8 +26,8 @@ function oneAssignment(_record) {
       <p class="listItemName">${_record.name}</p>
       <p class="dateDue">October 26</p>
       <div class="sublist">
-        <p class="taskAttribute">High Priority</p>
-        <p class="taskAttribute">30%</p>
+        <p class="taskAttribute">${_record.priority} Priority</p>
+        <p class="taskAttribute">${_record.percentage}%</p>
         <p class="taskAttribute">Difficult</p>
       </div>
     </div>
@@ -66,13 +66,33 @@ document.getElementById('page').addEventListener('page', function (e) {
     document.getElementById('createNewTaskBtn').addEventListener('click', function() {
       var valid = true;
       // Get all the data from the fields.
+
       var _name = document.getElementById('assignmentNameInput').value;
       var _value = document.getElementById('assignmentValueInput').value;
+      // var _radio = document.getElementById('radioSelection').value;
+
+      //CURRENTLY IN THE WORKS FOR GETTING DATA FROM RADIO BUTTON//
+
+      function turnRed() {
+        var myPara = document.getElementById("assignmentNameInput");
+        myPara.style.color = "red";
+      }
+
+      function turnRed2() {
+        var myValue = document.getElementById("assignmentValueInput");
+        myValue.style.color = "red";
+      }
 
       // Check that something was set for each. If not, then set valid=false
       if (_name.length < 4) {
         valid = false;
+        turnRed();
         // Pop up a message or something
+      }
+
+      if (_value.length > 2) {
+        valid = false;
+        turnRed2();
       }
 
       if (valid) {
@@ -82,6 +102,7 @@ document.getElementById('page').addEventListener('page', function (e) {
           id: 1000,
           name: _name,
           percentage: _value,
+          // priority: _radio,
           complete: false
         })
 
@@ -110,18 +131,21 @@ var _assignment = [
     id: 1,
     name: "Whatever",
     percentage: 30,
-    complete: false
+    complete: false,
+    priority: "Medium"
   },
   {
     id: 2,
     name: "Something else",
-    percentage: 30,
-    complete: false
+    percentage: 85,
+    complete: false,
+    priority: "Lowish"
   },
   {
     id: 3,
     name: "Ssdfsdfsdf",
-    percentage: 30,
-    complete: false
+    percentage: 36,
+    complete: false,
+    priority: "Lowest"
   }
 ];

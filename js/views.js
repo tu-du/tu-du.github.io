@@ -156,20 +156,20 @@ let addTask = `
 
   <a href="/clickMe"><input type="image" class="closeWindow" src="img/icons/no.png"></input></a>
 
-  <div class="taskInput">
+  <div class="taskInput" id="taskInputError">
     <input type="text" placeholder="ENTER ASSIGNMENT NAME" id="assignmentNameInput">
   </div>
 
   <div class="taskInput">
-    <input type="text" class="taskInput" placeholder="ENTER PERCENTAGE VALUE" id="assignmentValueInput">
+    <input type="number" class="taskInput" placeholder="ENTER PERCENTAGE VALUE" id="assignmentValueInput">
   </div>
 
   <p class="formSectionTitle">SELECT DIFFICULTY LEVEL</p>
 
-  <div class="checkboxContainer">
-  <input type="radio" class="difficultySelect" name="group1">EASY
-  <input type="radio" class="difficultySelect" name="group1">MODERATE
-  <input type="radio" class="difficultySelect" name="group1">HARD
+  <div class="checkboxContainer" id="radioSelection">
+    <input type="radio" class="difficultySelect" name="group1" id="radioSelection1">EASY
+    <input type="radio" class="difficultySelect" name="group1" id="radioSelection2">MODERATE
+    <input type="radio" class="difficultySelect" name="group1" id="radioSelection3">HARD
   </div>
 
 
