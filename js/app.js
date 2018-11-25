@@ -67,6 +67,7 @@ document.getElementById('page').addEventListener('page', function (e) {
       var valid = true;
       // Get all the data from the fields.
       var _name = document.getElementById('assignmentNameInput').value;
+      var _value = document.getElementById('assignmentValueInput').value;
 
       // Check that something was set for each. If not, then set valid=false
       if (_name.length < 4) {
@@ -80,7 +81,7 @@ document.getElementById('page').addEventListener('page', function (e) {
         _assignment.push({
           id: 1000,
           name: _name,
-          percentage: 30,
+          percentage: _value,
           complete: false
         })
 
@@ -99,7 +100,6 @@ document.getElementById('page').addEventListener('page', function (e) {
 
 
 }, false);
-
 
 
 

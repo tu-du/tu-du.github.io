@@ -157,54 +157,32 @@ let addTask = `
   <a href="/clickMe"><input type="image" class="closeWindow" src="img/icons/no.png"></input></a>
 
   <div class="taskInput">
-  <input type="text" placeholder="ENTER TASK NAME" id="assignmentNameInput">
-</div>
+    <input type="text" placeholder="ENTER ASSIGNMENT NAME" id="assignmentNameInput">
+  </div>
 
-<div class="taskInput">
-  <input type="text" class="taskInput" placeholder="ENTER PERCENTAGE VALUE">
-</div>
+  <div class="taskInput">
+    <input type="text" class="taskInput" placeholder="ENTER PERCENTAGE VALUE" id="assignmentValueInput">
+  </div>
 
   <p class="formSectionTitle">SELECT DIFFICULTY LEVEL</p>
 
-<div class="checkboxContainer">
-  <label class="difficultySelect">EASY
-    <input type="checkbox">
-    <span class="checkmark"></span>
-  </label>
-
-  <label class="difficultySelect">MODERATE
-    <input type="checkbox">
-    <span class="checkmark"></span>
-  </label>
-
-  <label class="difficultySelect">DIFFICULT
-    <input type="checkbox">
-    <span class="checkmark"></span>
-  </label>
-</div>
+  <div class="checkboxContainer">
+  <input type="radio" class="difficultySelect" name="group1">EASY
+  <input type="radio" class="difficultySelect" name="group1">MODERATE
+  <input type="radio" class="difficultySelect" name="group1">HARD
+  </div>
 
 
   <p class="formSectionTitle">SELECT PRIORITY LEVEL</p>
 
-<div class="checkboxContainer">
-  <label class="difficultySelect">LOW
-    <input type="checkbox">
-    <span class="checkmark"></span>
-  </label>
+  <div class="checkboxContainer">
+      <input type="radio" class="difficultySelect" name="group2">LOW
+      <input type="radio" class="difficultySelect" name="group2">MEDIUM
+      <input type="radio" class="difficultySelect" name="group2">HIGH
+  </div>
 
-  <label class="difficultySelect">MEDIUM
-    <input type="checkbox">
-    <span class="checkmark"></span>
-  </label>
-
-  <label class="difficultySelect">HIGH
-    <input type="checkbox">
-    <span class="radicheckmarkoButton"></span>
-  </label>
-</div>
-
-  <p class="formSectionTitle">SELECT DEADLINE</p>
-</div>
+    <p class="formSectionTitle">SELECT DEADLINE</p>
+  </div>
 
   <p class="createTaskButtonContainer"><button class="createTaskButton" id="createNewTaskBtn">Create Task</button></p>
 `;
