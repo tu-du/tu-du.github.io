@@ -1,18 +1,20 @@
 body {
   font-family: helvetica, sans-serif;
   font-size: 14px;
-  background-color: #FFFDF5;
+  background-color: #ffffff;
   color: #262626;
 }
 
 h1 {
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 18px;
+  font-weight: 700;
   padding: 1em 0;
   text-align: center;
-  font-family: garamond, serif;
-  background-color: #003DAA;
+  font-family: 'Source Sans Pro', sans-serif;
   color: #FFFDF5;
+  background-color: #003DAA;
+  letter-spacing: 2px;
+
 }
 
 h2 {
@@ -53,7 +55,10 @@ input:focus {
 }
 
 .container {
-  padding: 2em;
+  padding-top: 4em;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-bottom: 5em;
 }
 
 .newTaskButton {
@@ -64,6 +69,7 @@ input:focus {
   top: 2em;
   right: 1.5em;
   background-color: transparent;
+  position:fixed;
 }
 
 .list {
@@ -106,6 +112,8 @@ input:focus {
   justify-content: center;
   padding: 0.5em;
   font-size: 12px;
+  z-index: -1;
+
 }
 
 .loginGraphic {
@@ -240,17 +248,33 @@ input:focus {
   padding-bottom: 2em;
 }
 
-.remindersContainer {
-  box-shadow: 0px 8px 40px 0 rgba(0, 0, 0, 0.2);
+
+
+.remindersList {
+
+  margin-top: -30px;
 }
 
+
 .reminderslistItem {
-  padding: 2em;
-  border-bottom: 1px solid lightgrey;
+  padding: 1em;
+  border-bottom: 1px solid #0D40A4;
+}
+
+.reminderslistItemTitle h2 {
+  padding: 1em;
+  background-color: #7F9FD3;
+  font-size: 24px;
+  color:white;
+  border-top:1px solid #0D40A4;
+  border-left: 1px solid #0D40A4;
+  border-right: 1px solid #0D40A4;
+  border-bottom: 10px solid #0D40A4;
 }
 
 .profilePic {
-  padding: 2em 4em 0 4em;
+  padding-bottom: -2px;
+
 }
 
 .profileInfo {
@@ -262,22 +286,50 @@ input:focus {
   color: #999999;
   font-size: 12px;
   position: absolute;
-  bottom: -40px;
+  bottom: 100px;
+  border:1px;
   box-shadow: 6px 8px 40px 0 rgba(0, 0, 0, 0.2);
 }
 
 .profileName {
-  font-size: 32px;
+  font-size: 25px;
   font-weight: bold;
   color: #262626;
-  padding-bottom: 0.25em;
+  border-bottom:6px solid #003DAA;
+  padding:16px;
 }
 
+.profileEmail {
+  font-size:16px;
+  font-family: courier;
+  font-weight: 100;
+  padding:16px;
+
+}
+
+.profileSchool {
+  font-size: 10px;
+  color:white;
+  background-color: #003DAA;
+  padding:16px;
+  letter-spacing: 2px;
+
+}
 .profileContainer {
   position: relative;
+  margin-top: 20px;
+  border:4px #003DAA solid;
+  border-top:15px #003DAA solid;
+  z-index: -1;
+
 }
 
-
+.header {
+  position:fixed;
+  height: 57px;
+  width:100%;
+  background-color: #003DAA;
+}
 .bottom {
   position: fixed;
   width: 100%;

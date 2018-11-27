@@ -20,7 +20,10 @@ let login = `
 `;
 
 let navigation = `
+
+<div class="header">
 <h1>MY ASSIGNMENTS</h1>
+</div>
 
 <div class="container">
   <a href="/newTask"><input type="image" class="newTaskButton" src="img/icons/addtask-button.svg"></input></a>
@@ -189,14 +192,18 @@ let addTask = `
 
 let reminderPage = `
 
-  <h1>REMINDERS</h1>
-
+  <div class="header"><h1>REMINDERS</h1></header>
+  <div class="container">
   <div class="remindersContainer">
 
     <div class="remindersList">
 
-      <div class="reminderslistItem">
-        <h2>DUE TODAY</h2>
+      <div class="reminderslistItemTitle">
+        <h2>HELLO BEATRICE,
+        <P>HERE IS WHAT IS DUE TODAY:</P></H2>
+        </div>
+
+        <div class="reminderslistItem">
         <h3>Pitch Presentation</h3>
         <p>Lorem ipsum dolor sit amet.</p>
       </div>
@@ -213,7 +220,7 @@ let reminderPage = `
 
     </div>
   </div>
-
+</div>
   <ul class="bottom">
       <li><a href="/whatDay"><img src="img/nav/calendar.svg"></a></li>
       <li><a href="/clickMe"><img src="img/nav/list.svg"></a></li>
@@ -224,19 +231,21 @@ let reminderPage = `
 `;
 
 var aboutMe = `
-  <h1>Profile</h1>
+<div class="header"><h1>PROFILE</h1></div>
 
+<div class="container">
   <div class="profileContainer">
+    <div class="profileName"> BEATRICE FLORES
+    </div>
     <div class="profilePic">
-      <img src="img/profilepicture.png"></img>
+      <img src="img/profilepicture.jpg"></img>
+    </div>
+    <div class="profileEmail">beatriceflores@georgebrown.ca
+    </div>
+    <div class="profileSchool">GEORGE BROWN COLLEGE
     </div>
   </div>
-
-  <div class="profileInfo">
-      <p class="profileName">Kian Williams</p>
-      <p>George Brown College</p>
-      <p>kian.williams@georgebrown.ca</p>
-  </div>
+</div>
 
   <ul class="bottom">
       <li><a href="/whatDay"><img src="img/nav/calendar.svg"></a></li>
