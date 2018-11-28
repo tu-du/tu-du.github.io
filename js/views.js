@@ -16,13 +16,13 @@ let login = `
     </p>
   </div>
 
-    <a href="/clickMe" style="color: #FFFDF5"><p class="loginButtonContainer"><button class="loginButton">SIGN IN</button></p></a>
+    <a href="/remindMe" style="color: #FFFDF5"><p class="loginButtonContainer"><button class="loginButton">SIGN IN</button></p></a>
 `;
 
 let navigation = `
 
 <div class="header">
-<h1>MY ASSIGNMENTS</h1>
+<h1>My Assignments</h1>
 </div>
 
 <div class="container">
@@ -33,6 +33,7 @@ let navigation = `
     <div class="listItem">
       <p class="listItemName">Interactive Systems Timeline</p>
       <p class="dateDue">October 26</p>
+
       <div class="sublist">
         <p class="taskAttribute">High Priority</p>
         <p class="taskAttribute">30%</p>
@@ -205,16 +206,19 @@ let reminderPage = `
 
         <div class="reminderslistItem">
         <h3>Pitch Presentation</h3>
+        <p>November 30th</p>
         <p>Lorem ipsum dolor sit amet.</p>
       </div>
 
       <div class="reminderslistItem">
         <h3>Device Development HTML Code</h3>
+        <p>December 4th</p>
         <p>Lorem ipsum dolor sit amet.</p>
       </div>
 
       <div class="reminderslistItem">
         <h3>Ergonomics Paper</h3>
+        <p>December 5th</p>
         <p>Lorem ipsum dolor sit amet.</p>
       </div>
 

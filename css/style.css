@@ -350,3 +350,8 @@ input:focus {
   width: 35%;
   height: 35%;
 }
+
+.deleteButton {
+  color: #000;
+  
+}

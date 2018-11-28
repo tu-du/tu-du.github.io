@@ -24,11 +24,12 @@ function oneAssignment(_record) {
   return `
     <div class="listItem" data-id="${_record.id}">
       <p class="listItemName">${_record.name}</p>
-      <p class="dateDue">October 26</p>
+      <p class="dateDue">${_record.daTe}</p>
+      <input type="button" class="deleteButton" value="Delete" data-id="${_record.id}">
       <div class="sublist">
         <p class="taskAttribute">${_record.priority} Priority</p>
         <p class="taskAttribute">${_record.percentage}%</p>
-        <p class="taskAttribute">Difficult</p>
+        <p class="taskAttribute">${_record.difficulty}</p>
       </div>
     </div>
   `
@@ -50,7 +51,7 @@ document.getElementById('page').addEventListener('page', function (e) {
     assignmentList.innerHTML = _assignment.map(oneAssignment).join('\n');
 
     // Loop through them all querySelectorAll('.listItem')
-    document.querySelectorAll('.listItem').forEach(function(_item) {
+    document.querySelectorAll('.deleteButton').forEach(function(_item) {
       _item.addEventListener('click', function() {
         // DELETE IT
         var deleteRecord = _assignment.find( _record => _record.id == this.getAttribute('data-id') );
@@ -130,22 +131,47 @@ var _assignment = [
   {
     id: 1,
     name: "Whatever",
+    daTe: "November 30th",
     percentage: 30,
     complete: false,
-    priority: "Medium"
+    priority: "Medium",
+    difficulty: "hard"
   },
   {
     id: 2,
     name: "Something else",
+    daTe: "December 3rd",
     percentage: 85,
     complete: false,
-    priority: "Lowish"
+    priority: "Lowish",
+    difficulty: "easy"
   },
   {
     id: 3,
     name: "Ssdfsdfsdf",
+    daTe: "December 5th",
     percentage: 36,
     complete: false,
-    priority: "Lowest"
-  }
+    priority: "Lowest",
+    difficulty: "medium"
+  },
+  {
+    id: 4,
+    name: "Another One",
+    daTe: "December 6th",
+    percentage: 55,
+    complete: false,
+    priority: "high",
+    difficulty: "hard"
+
+  },  {
+      id: 5,
+      name: "DJ Khaled",
+      daTe: "December 8th",
+      percentage: 25,
+      complete: false,
+      priority: "high",
+      difficulty: "easy"
+
+    }
 ];
