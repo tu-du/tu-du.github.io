@@ -28,40 +28,8 @@ let navigation = `
 <div class="container">
   <a href="/newTask"><input type="image" class="newTaskButton" src="img/icons/addtask-button.svg"></input></a>
 
-  <div class="list" id="assignment-list">
-<!--
-    <div class="listItem">
-      <p class="listItemName">Interactive Systems Timeline</p>
-      <p class="dateDue">October 26</p>
+  <div class="list" id="assignment-list"></div>
 
-      <div class="sublist">
-        <p class="taskAttribute">High Priority</p>
-        <p class="taskAttribute">30%</p>
-        <p class="taskAttribute">Difficult</p>
-      </div>
-    </div>
-
-    <div class="listItem">
-      <p class="listItemName">Ergonomics Video Presentation</p>
-      <p class="dateDue">November 2</p>
-      <div class="sublist">
-        <p class="taskAttribute">High Priority</p>
-        <p class="taskAttribute">30%</p>
-        <p class="taskAttribute">Difficult</p>
-      </div>
-    </div>
-
-    <div class="listItem">
-      <p class="listItemName">Portfolio Rough Draft Resume</p>
-      <p class="dateDue">November 14</p>
-      <div class="sublist">
-        <p class="taskAttribute">High Priority</p>
-        <p class="taskAttribute">30%</p>
-        <p class="taskAttribute">Difficult</p>
-      </div>
-    </div>
--->
-  </div>
   <ul class="bottom">
       <li><a href="/whatDay"><img src="img/nav/calendar.svg"></a></li>
       <li><img src="img/nav/list-selected.svg"></li>
@@ -168,21 +136,21 @@ let addTask = `
     <input type="number" class="taskInput" placeholder="ENTER PERCENTAGE VALUE" id="assignmentValueInput">
   </div>
 
-  <p class="formSectionTitle">SELECT DIFFICULTY LEVEL</p>
+  <p class="formSectionTitle" id="difficultyTitle">SELECT DIFFICULTY LEVEL</p>
 
   <div class="checkboxContainer" id="radioSelection">
-    <input type="radio" class="difficultySelect" name="group1" id="radioSelection1">EASY
-    <input type="radio" class="difficultySelect" name="group1" id="radioSelection2">MODERATE
-    <input type="radio" class="difficultySelect" name="group1" id="radioSelection3">HARD
+    <input type="radio" class="difficultySelect" name="group1" id="radioSelection1" value="Easy">EASY
+    <input type="radio" class="difficultySelect" name="group1" id="radioSelection1" value="Moderate">MODERATE
+    <input type="radio" class="difficultySelect" name="group1" id="radioSelection1" value="Hard">HARD
   </div>
 
 
   <p class="formSectionTitle">SELECT PRIORITY LEVEL</p>
 
   <div class="checkboxContainer">
-      <input type="radio" class="difficultySelect" name="group2">LOW
-      <input type="radio" class="difficultySelect" name="group2">MEDIUM
-      <input type="radio" class="difficultySelect" name="group2">HIGH
+      <input type="radio" class="difficultySelect" name="group2" value="Low">LOW
+      <input type="radio" class="difficultySelect" name="group2" value="Medium">MEDIUM
+      <input type="radio" class="difficultySelect" name="group2" value="High">HIGH
   </div>
 
     <p class="formSectionTitle">SELECT DEADLINE</p>
