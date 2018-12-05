@@ -1,9 +1,9 @@
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () =>
-    navigator.serviceWorker.register('service-worker.js')
-      .then(registration => console.log('Service Worker registered'))
-      .catch(err => 'Service Worker registration failed')
-  );
+  navigator.serviceWorker.register('service-worker.js')
+  .then(registration => console.log('Service Worker registered'))
+  .catch(err => 'Service Worker registration failed')
+);
 }
 
 
@@ -22,20 +22,18 @@ const routes = {
 
 function oneAssignment(_record) {
   return `
-    <div class="listItem" data-id="${_record.id}">
-      <p class="listItemName">${_record.name}</p>
-      <p class="dateDue">${_record.daTe}</p>
-      <img src="images/icons/trash.svg" class="deleteButton" data-id="${_record.id}">
-      <div class="sublist">
-        <p class="taskAttribute">${_record.priority} Priority</p>
-        <p class="taskAttribute">${_record.percentage}%</p>
-        <p class="taskAttribute">${_record.difficulty}</p>
-      </div>
-    </div>
+  <div class="listItem" data-id="${_record.id}">
+  <p class="listItemName">${_record.name}</p>
+  <p class="dateDue">${_record.daTe}</p>
+  <img src="images/icons/trash.svg" class="deleteButton" data-id="${_record.id}">
+  <div class="sublist">
+  <p class="taskAttribute">${_record.priority} Priority</p>
+  <p class="taskAttribute">${_record.percentage}%</p>
+  <p class="taskAttribute">${_record.difficulty} Difficulty</p>
+  </div>
+  </div>
   `
 }
-
-
 
 
 // DATA UPDATER:
@@ -70,9 +68,7 @@ document.getElementById('page').addEventListener('page', function (e) {
 
       var _name = document.getElementById('assignmentNameInput').value;
       var _value = document.getElementById('assignmentValueInput').value;
-      // var _radio = document.getElementById('radioSelection').value;
 
-      //CURRENTLY IN THE WORKS FOR GETTING DATA FROM RADIO BUTTON//
 
       function turnRed() {
         var myPara = document.getElementById("assignmentNameInput");
@@ -96,6 +92,20 @@ document.getElementById('page').addEventListener('page', function (e) {
         turnRed2();
       }
 
+      var _group1 = document.querySelector('input[name="group1"]:checked').value;
+      var _group2 = document.querySelector('input[name="group2"]:checked').value;
+
+      function turnRed3() {
+        var myRadio = document.getElementById("difficultyTitle");
+        myRadio.style.color = "red";
+      }
+
+      if (_group1.value == null) {
+        valid=false;
+        turnRed3();
+      }
+
+
       if (valid) {
         // All passed, now create the assignment
         // NOW CREATE AN ASSIGNMENT
@@ -103,7 +113,8 @@ document.getElementById('page').addEventListener('page', function (e) {
           id: 1000,
           name: _name,
           percentage: _value,
-          // priority: _radio,
+          priority: _group1,
+          difficulty: _group2,
           complete: false
         })
 
@@ -165,13 +176,13 @@ var _assignment = [
     difficulty: "hard"
 
   },  {
-      id: 5,
-      name: "DJ Khaled",
-      daTe: "December 8th",
-      percentage: 25,
-      complete: false,
-      priority: "high",
-      difficulty: "easy"
+    id: 5,
+    name: "DJ Khaled",
+    daTe: "December 8th",
+    percentage: 25,
+    complete: false,
+    priority: "high",
+    difficulty: "easy"
 
-    }
+  }
 ];
