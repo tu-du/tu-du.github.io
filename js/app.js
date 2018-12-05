@@ -141,48 +141,48 @@ document.getElementById('page').addEventListener('page', function (e) {
 var _assignment = [
   {
     id: 1,
-    name: "Whatever",
-    daTe: "November 30th",
+    name: "Interactive Video Final",
+    daTe: "December 4th",
     percentage: 30,
     complete: false,
     priority: "Medium",
-    difficulty: "hard"
+    difficulty: "Hard"
   },
   {
     id: 2,
-    name: "Something else",
-    daTe: "December 3rd",
+    name: "Ergonomics Assignment 6",
+    daTe: "December 7th",
     percentage: 85,
     complete: false,
-    priority: "Lowish",
-    difficulty: "easy"
+    priority: "Low",
+    difficulty: "Easy"
   },
   {
     id: 3,
-    name: "Ssdfsdfsdf",
-    daTe: "December 5th",
+    name: "Interactive Systems Final",
+    daTe: "December 11th",
     percentage: 36,
     complete: false,
-    priority: "Lowest",
-    difficulty: "medium"
+    priority: "Low",
+    difficulty: "Medium"
   },
   {
     id: 4,
-    name: "Another One",
-    daTe: "December 6th",
+    name: "Device Development Final",
+    daTe: "December 12th",
     percentage: 55,
     complete: false,
-    priority: "high",
-    difficulty: "hard"
+    priority: "High",
+    difficulty: "Hard"
 
   },  {
     id: 5,
-    name: "DJ Khaled",
-    daTe: "December 8th",
+    name: "Portfolio Final",
+    daTe: "December 15th",
     percentage: 25,
     complete: false,
-    priority: "high",
-    difficulty: "easy"
+    priority: "Low",
+    difficulty: "Easy"
 
   }
 ];

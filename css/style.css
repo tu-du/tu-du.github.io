@@ -360,12 +360,12 @@ input:focus {
 }
 
 .deleteButton {
-  color: #000;
-  text-align: right;
+  color: #003DAA;
   display: block;
   margin-right: 0;
   position: absolute;
   right: 10%;
   width: 20px;
+  z-index: -1;
 
 }
