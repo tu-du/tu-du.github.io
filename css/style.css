@@ -353,5 +353,11 @@ input:focus {
 
 .deleteButton {
   color: #000;
-  
+  text-align: right;
+  display: block;
+  margin-right: 0;
+  position: absolute;
+  right: 10%;
+  width: 20px;
+
 }

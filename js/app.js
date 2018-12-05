@@ -25,7 +25,7 @@ function oneAssignment(_record) {
     <div class="listItem" data-id="${_record.id}">
       <p class="listItemName">${_record.name}</p>
       <p class="dateDue">${_record.daTe}</p>
-      <input type="button" class="deleteButton" value="Delete" data-id="${_record.id}">
+      <img src="images/icons/trash.svg" class="deleteButton" data-id="${_record.id}">
       <div class="sublist">
         <p class="taskAttribute">${_record.priority} Priority</p>
         <p class="taskAttribute">${_record.percentage}%</p>
