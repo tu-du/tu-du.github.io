@@ -206,7 +206,6 @@ let addTask = `
     </div>
   </div>
 
-
   <p class="formSectionTitle">SELECT DEADLINE</p>
 
   </div>
@@ -230,20 +229,23 @@ let reminderPage = `
             <P>HERE IS WHAT IS DUE TODAY:</P></H2>
           </div>
 
-          <div class="reminderslistItem">
-            <h3>Pitch Presentation</h3>
-            <p>Lorem ipsum dolor sit amet.</p>
+          <div id="all-reminders">
+            <!-- <div class="reminderslistItem">
+              <h3>Pitch Presentation</h3>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+
+            <div class="reminderslistItem">
+              <h3>Device Development HTML Code</h3>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+
+            <div class="reminderslistItem">
+              <h3>Ergonomics Paper</h3>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div> -->
           </div>
 
-          <div class="reminderslistItem">
-            <h3>Device Development HTML Code</h3>
-            <p>Lorem ipsum dolor sit amet.</p>
-          </div>
-
-          <div class="reminderslistItem">
-            <h3>Ergonomics Paper</h3>
-            <p>Lorem ipsum dolor sit amet.</p>
-          </div>
 
         </div>
       </div>

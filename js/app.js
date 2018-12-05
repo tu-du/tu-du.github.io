@@ -21,10 +21,12 @@ const routes = {
 
 
 function oneAssignment(_record) {
+  // var date = moment(`${_record.date.y}${_record.date.m}${_record.date.d}`, "YYYYMMDD").fromNow();
+
   return `
   <div class="listItem" data-id="${_record.id}">
   <p class="listItemName">${_record.name}</p>
-  <p class="dateDue">${_record.daTe}</p>
+  <p class="dateDue">${_record.date}</p>
   <img src="images/icons/trash.svg" class="deleteButton" data-id="${_record.id}">
   <div class="sublist">
   <p class="taskAttribute">${_record.priority} Priority</p>
@@ -34,6 +36,24 @@ function oneAssignment(_record) {
   </div>
   `
 }
+
+var months = ["January", "February"];
+
+// function simpleAssignment(_record) {
+//   return `<div class="reminderslistItem">
+//             <h3>${_record.name}</h3>
+//             <p>${months[_record.date.m - 1]} ${_record.date.d}</p>
+//           </div>`;
+// }
+function simpleAssignment(_record) {
+  var date = moment(`${_record.date.y}${_record.date.m}${_record.date.d}`, "YYYYMMDD").fromNow();
+  return `<div class="reminderslistItem">
+            <h3>${_record.name}</h3>
+            <p>${date}</p>
+          </div>`;
+}
+
+
 
 
 // DATA UPDATER:
@@ -125,6 +145,14 @@ document.getElementById('page').addEventListener('page', function (e) {
 
   } // /newTask
 
+  else if (currPage == '/remindMe') {
+
+    var reminderList = document.getElementById('all-reminders');
+    // For each reminder, call createTask and join them all together with a linebreak between
+    reminderList.innerHTML = _assignment.map(simpleAssignment).join('\n');
+
+
+  }
 
   // When you show the reminders, FILTER the main list to only have items with complete:false
   // https://blog.mariusschulz.com/2016/07/16/removing-elements-from-javascript-arrays
@@ -142,7 +170,8 @@ var _assignment = [
   {
     id: 1,
     name: "Interactive Video Final",
-    daTe: "December 4th",
+    // date: {y:'2018', m:'12', d:'05'},
+    date: "December 5th",
     percentage: 30,
     complete: false,
     priority: "Medium",
@@ -151,8 +180,8 @@ var _assignment = [
   {
     id: 2,
     name: "Ergonomics Assignment 6",
-    daTe: "December 7th",
-    percentage: 85,
+    date: {y:'2018', m:'12', d:'05'},
+    percentage: 20,
     complete: false,
     priority: "Low",
     difficulty: "Easy"
@@ -160,17 +189,17 @@ var _assignment = [
   {
     id: 3,
     name: "Interactive Systems Final",
-    daTe: "December 11th",
-    percentage: 36,
+    date: {y:'2018', m:'12', d:'05'},
+    percentage: 50,
     complete: false,
     priority: "Low",
-    difficulty: "Medium"
+    difficulty: "Med"
   },
   {
     id: 4,
     name: "Device Development Final",
-    daTe: "December 12th",
-    percentage: 55,
+    date: {y:'2018', m:'12', d:'05'},
+    percentage: 100,
     complete: false,
     priority: "High",
     difficulty: "Hard"
@@ -178,7 +207,7 @@ var _assignment = [
   },  {
     id: 5,
     name: "Portfolio Final",
-    daTe: "December 15th",
+    date: {y:'2018', m:'12', d:'05'},
     percentage: 25,
     complete: false,
     priority: "Low",
