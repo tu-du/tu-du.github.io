@@ -113,8 +113,8 @@ document.getElementById('page').addEventListener('page', function (e) {
           id: 1000,
           name: _name,
           percentage: _value,
-          priority: _group1,
-          difficulty: _group2,
+          difficulty: _group1,
+          priority: _group2,
           complete: false
         })
 
