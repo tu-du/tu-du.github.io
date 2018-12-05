@@ -177,17 +177,17 @@ let addTask = `
 
   <div class="checkboxContainer" id="radioSelection">
   <div class="difficultySelect">
-    <input type="radio" id="radioSelection1" name="group1" value="all" checked>
-    <label for="radioSelection1">EASY</label>
+    <input type="radio" id="radioSelection1" name="group1" value="Low">
+    <label for="radioSelection1">LOW</label>
   </div>
 
   <div class="difficultySelect">
-    <input type="radio" id="radioSelection2" name="group1" value="false">
+    <input type="radio" id="radioSelection2" name="group1" value="Moderate">
     <label for="radioSelection2">MODERATE</label>
   </div>
 
   <div class="difficultySelect">
-    <input type="radio" id="radioSelection3" name="group1" value="true">
+    <input type="radio" id="radioSelection3" name="group1" value="Hard">
     <label for="radioSelection3">HARD</label>
   </div>
 </div>
@@ -203,17 +203,17 @@ let addTask = `
 
   <div class="checkboxContainer">
   <div class="difficultySelect">
-    <input type="radio" id="radioSelection4" name="group2" value="false">
-    <label for="radioSelection4">LOW</label>
+    <input type="radio" id="radioSelection4" name="group2" value="Easy">
+    <label for="radioSelection4">EASY</label>
   </div>
 
   <div class="difficultySelect">
-    <input type="radio" id="radioSelection5" name="group2" value="false">
+    <input type="radio" id="radioSelection5" name="group2" value="Medium">
     <label for="radioSelection5">MEDIUM</label>
   </div>
 
   <div class="difficultySelect">
-    <input type="radio" id="radioSelection6" name="group2" value="false">
+    <input type="radio" id="radioSelection6" name="group2" value="High">
     <label for="radioSelection6">HIGH</label>
   </div>
 </div>
