@@ -100,7 +100,7 @@ document.getElementById('page').addEventListener('page', function (e) {
         myRadio.style.color = "red";
       }
 
-      if (_group1.value == null) {
+      if (_group1 == null) {
         valid=false;
         turnRed3();
       }
