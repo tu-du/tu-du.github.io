@@ -207,7 +207,15 @@ let addTask = `
   </div>
 
   <p class="formSectionTitle">SELECT DEADLINE</p>
-
+  <div class="taskInput">
+    <input type="number" class="taskInput" placeholder="ENTER YEAR" id="assignmentValueInput">
+  </div>
+  <div class="taskInput">
+    <input type="number" class="taskInput" placeholder="ENTER MONTH" id="assignmentValueInput">
+  </div>
+  <div class="taskInput">
+    <input type="number" class="taskInput" placeholder="ENTER DAY" id="assignmentValueInput">
+  </div>
   </div>
 
 

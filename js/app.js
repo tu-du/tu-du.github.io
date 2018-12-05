@@ -21,13 +21,13 @@ const routes = {
 
 
 function oneAssignment(_record) {
-  // var date = moment(`${_record.date.y}${_record.date.m}${_record.date.d}`, "YYYYMMDD").fromNow();
+  var date = moment(`${_record.date.y}${_record.date.m}${_record.date.d}`, "YYYYMMDD").fromNow();
 
   return `
   <div class="listItem" data-id="${_record.id}">
   <p class="listItemName">${_record.name}</p>
-  <p class="dateDue">${_record.date}</p>
-  <img src="images/icons/trash.svg" class="deleteButton" data-id="${_record.id}">
+    <img src="images/icons/trash.svg" class="deleteButton" data-id="${_record.id}">
+  <p class="dateDue">${date}</p>
   <div class="sublist">
   <p class="taskAttribute">${_record.priority} Priority</p>
   <p class="taskAttribute">${_record.percentage}%</p>
@@ -37,7 +37,7 @@ function oneAssignment(_record) {
   `
 }
 
-var months = ["January", "February"];
+var months = ["January", "February, March, April, May, June, July, August, September, October, November, December"];
 
 // function simpleAssignment(_record) {
 //   return `<div class="reminderslistItem">
@@ -46,7 +46,7 @@ var months = ["January", "February"];
 //           </div>`;
 // }
 function simpleAssignment(_record) {
-  var date = moment(`${_record.date.y}${_record.date.m}${_record.date.d}`, "YYYYMMDD").fromNow();
+  var date = moment().add(1, `${_record.date.d}`).calendar();
   return `<div class="reminderslistItem">
             <h3>${_record.name}</h3>
             <p>${date}</p>
@@ -132,6 +132,7 @@ document.getElementById('page').addEventListener('page', function (e) {
         _assignment.push({
           id: 1000,
           name: _name,
+          date: {year:"", month:"", day:"",},
           percentage: _value,
           difficulty: _group1,
           priority: _group2,
@@ -171,7 +172,7 @@ var _assignment = [
     id: 1,
     name: "Interactive Video Final",
     // date: {y:'2018', m:'12', d:'05'},
-    date: "December 5th",
+    date: {y:'2018', m:'12', d:'05'},
     percentage: 30,
     complete: false,
     priority: "Medium",
@@ -203,6 +204,24 @@ var _assignment = [
     complete: false,
     priority: "High",
     difficulty: "Hard"
+
+  },  {
+    id: 5,
+    name: "Portfolio Final",
+    date: {y:'2018', m:'12', d:'05'},
+    percentage: 25,
+    complete: false,
+    priority: "Low",
+    difficulty: "Easy"
+
+  },  {
+    id: 5,
+    name: "Portfolio Final",
+    date: {y:'2018', m:'12', d:'05'},
+    percentage: 25,
+    complete: false,
+    priority: "Low",
+    difficulty: "Easy"
 
   },  {
     id: 5,

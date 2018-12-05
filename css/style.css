@@ -14,6 +14,7 @@ h1 {
   color: #FFFDF5;
   background-color: #003DAA;
   letter-spacing: 2px;
+  z-index: 99;
 
 }
 
@@ -70,6 +71,7 @@ input:focus {
   right: 1.5em;
   background-color: transparent;
   position:fixed;
+  z-index: 99;
 }
 
 .list {
@@ -333,6 +335,7 @@ input:focus {
   height: 57px;
   width:100%;
   background-color: #003DAA;
+  z-index: 99;
 }
 .bottom {
   position: fixed;
