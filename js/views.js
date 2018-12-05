@@ -16,20 +16,51 @@ let login = `
     </p>
   </div>
 
-    <a href="/remindMe" style="color: #FFFDF5"><p class="loginButtonContainer"><button class="loginButton">SIGN IN</button></p></a>
+    <a href="/clickMe" style="color: #FFFDF5"><p class="loginButtonContainer"><button class="loginButton">SIGN IN</button></p></a>
 `;
 
 let navigation = `
 
 <div class="header">
-<h1>My Assignments</h1>
+<h1>MY ASSIGNMENTS</h1>
 </div>
 
 <div class="container">
   <a href="/newTask"><input type="image" class="newTaskButton" src="img/icons/addtask-button.svg"></input></a>
 
-  <div class="list" id="assignment-list"></div>
+  <div class="list" id="assignment-list">
+<!--
+    <div class="listItem">
+      <p class="listItemName">Interactive Systems Timeline</p>
+      <p class="dateDue">October 26</p>
+      <div class="sublist">
+        <p class="taskAttribute">High Priority</p>
+        <p class="taskAttribute">30%</p>
+        <p class="taskAttribute">Difficult</p>
+      </div>
+    </div>
 
+    <div class="listItem">
+      <p class="listItemName">Ergonomics Video Presentation</p>
+      <p class="dateDue">November 2</p>
+      <div class="sublist">
+        <p class="taskAttribute">High Priority</p>
+        <p class="taskAttribute">30%</p>
+        <p class="taskAttribute">Difficult</p>
+      </div>
+    </div>
+
+    <div class="listItem">
+      <p class="listItemName">Portfolio Rough Draft Resume</p>
+      <p class="dateDue">November 14</p>
+      <div class="sublist">
+        <p class="taskAttribute">High Priority</p>
+        <p class="taskAttribute">30%</p>
+        <p class="taskAttribute">Difficult</p>
+      </div>
+    </div>
+-->
+  </div>
   <ul class="bottom">
       <li><a href="/whatDay"><img src="img/nav/calendar.svg"></a></li>
       <li><img src="img/nav/list-selected.svg"></li>
@@ -136,22 +167,57 @@ let addTask = `
     <input type="number" class="taskInput" placeholder="ENTER PERCENTAGE VALUE" id="assignmentValueInput">
   </div>
 
-  <p class="formSectionTitle" id="difficultyTitle">SELECT DIFFICULTY LEVEL</p>
+  <p class="formSectionTitle">SELECT DIFFICULTY LEVEL</p>
+
+  <!-- <div class="checkboxContainer" id="radioSelection">
+    <input type="radio" class="difficultySelect" name="group1" id="radioSelection1">EASY
+    <input type="radio" class="difficultySelect" name="group1" id="radioSelection2">MODERATE
+    <input type="radio" class="difficultySelect" name="group1" id="radioSelection3">HARD
+  </div> -->
 
   <div class="checkboxContainer" id="radioSelection">
-    <input type="radio" class="difficultySelect" name="group1" id="radioSelection1" value="Easy">EASY
-    <input type="radio" class="difficultySelect" name="group1" id="radioSelection1" value="Moderate">MODERATE
-    <input type="radio" class="difficultySelect" name="group1" id="radioSelection1" value="Hard">HARD
+  <div class="difficultySelect">
+    <input type="radio" id="radioSelection1" name="group1" value="all" checked>
+    <label for="radioSelection1">EASY</label>
   </div>
+
+  <div class="difficultySelect">
+    <input type="radio" id="radioSelection2" name="group1" value="false">
+    <label for="radioSelection2">MODERATE</label>
+  </div>
+
+  <div class="difficultySelect">
+    <input type="radio" id="radioSelection3" name="group1" value="true">
+    <label for="radioSelection3">HARD</label>
+  </div>
+</div>
 
 
   <p class="formSectionTitle">SELECT PRIORITY LEVEL</p>
 
+  <!-- <div class="checkboxContainer">
+      <input type="radio" class="difficultySelect" name="group2">LOW
+      <input type="radio" class="difficultySelect" name="group2">MEDIUM
+      <input type="radio" class="difficultySelect" name="group2">HIGH
+  </div> -->
+
   <div class="checkboxContainer">
-      <input type="radio" class="difficultySelect" name="group2" value="Low">LOW
-      <input type="radio" class="difficultySelect" name="group2" value="Medium">MEDIUM
-      <input type="radio" class="difficultySelect" name="group2" value="High">HIGH
+  <div class="difficultySelect">
+    <input type="radio" id="radioSelection4" name="group2" value="false">
+    <label for="radioSelection4">LOW</label>
   </div>
+
+  <div class="difficultySelect">
+    <input type="radio" id="radioSelection5" name="group2" value="false">
+    <label for="radioSelection5">MEDIUM</label>
+  </div>
+
+  <div class="difficultySelect">
+    <input type="radio" id="radioSelection6" name="group2" value="false">
+    <label for="radioSelection6">HIGH</label>
+  </div>
+</div>
+
 
     <p class="formSectionTitle">SELECT DEADLINE</p>
   </div>
@@ -174,19 +240,16 @@ let reminderPage = `
 
         <div class="reminderslistItem">
         <h3>Pitch Presentation</h3>
-        <p>November 30th</p>
         <p>Lorem ipsum dolor sit amet.</p>
       </div>
 
       <div class="reminderslistItem">
         <h3>Device Development HTML Code</h3>
-        <p>December 4th</p>
         <p>Lorem ipsum dolor sit amet.</p>
       </div>
 
       <div class="reminderslistItem">
         <h3>Ergonomics Paper</h3>
-        <p>December 5th</p>
         <p>Lorem ipsum dolor sit amet.</p>
       </div>
 
