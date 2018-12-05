@@ -167,12 +167,32 @@ let addTask = `
     <input type="number" class="taskInput" placeholder="ENTER PERCENTAGE VALUE" id="assignmentValueInput">
   </div>
 
+    <p class="formSectionTitle">SELECT PRIORITY LEVEL</p>
+
+    <div class="checkboxContainer">
+      <div class="difficultySelect">
+        <input type="radio" id="radioSelection4" name="group2" value="Low">
+        <label for="radioSelection4">LOW</label>
+      </div>
+
+      <div class="difficultySelect">
+        <input type="radio" id="radioSelection5" name="group2" value="Medium">
+        <label for="radioSelection5">MEDIUM</label>
+      </div>
+
+      <div class="difficultySelect">
+        <input type="radio" id="radioSelection6" name="group2" value="High">
+        <label for="radioSelection6">HIGH</label>
+      </div>
+    </div>
+
+
   <p class="formSectionTitle">SELECT DIFFICULTY LEVEL</p>
 
   <div class="checkboxContainer" id="radioSelection">
     <div class="difficultySelect">
-      <input type="radio" id="radioSelection1" name="group1" value="Low">
-      <label for="radioSelection1">LOW</label>
+      <input type="radio" id="radioSelection1" name="group1" value="Easy">
+      <label for="radioSelection1">EASY</label>
     </div>
 
     <div class="difficultySelect">
@@ -187,34 +207,8 @@ let addTask = `
   </div>
 
 
-  <p class="formSectionTitle">SELECT PRIORITY LEVEL</p>
-
-  <div class="checkboxContainer">
-    <div class="difficultySelect">
-      <input type="radio" id="radioSelection4" name="group2" value="Easy">
-      <label for="radioSelection4">EASY</label>
-    </div>
-
-    <div class="difficultySelect">
-      <input type="radio" id="radioSelection5" name="group2" value="Medium">
-      <label for="radioSelection5">MEDIUM</label>
-    </div>
-
-    <div class="difficultySelect">
-      <input type="radio" id="radioSelection6" name="group2" value="High">
-      <label for="radioSelection6">HIGH</label>
-    </div>
-  </div>
-
-
   <p class="formSectionTitle">SELECT DEADLINE</p>
-  <div class="dropdown">
-    <button onclick="myFunction()" class="dropButton">Select Month</button>
-    <div id="monthDropdown" class="dropdownContent">
-      <ul>January</ul>
-      <ul>February<ul>
-      <ul>March</ul>
-    </div>
+
   </div>
 
 
