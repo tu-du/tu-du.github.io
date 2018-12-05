@@ -210,7 +210,7 @@ var aboutMe = `
     <div class="profileName"> BEATRICE FLORES
     </div>
     <div class="profilePic">
-      <img src="img/profilepicture.jpg"></img>
+      <img src="images/icons/beatrice.png"></img>
     </div>
     <div class="profileEmail">beatriceflores@georgebrown.ca
     </div>
