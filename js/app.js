@@ -21,7 +21,7 @@ const routes = {
 
 
 function oneAssignment(_record) {
-  var date = moment(`${_record.date.y}${_record.date.m}${_record.date.d}`, "YYYYMMDD").fromNow();
+  var date = moment(_record.date, "YYYYMMDD").fromNow();
 
   return `
   <div class="listItem" data-id="${_record.id}">
@@ -37,7 +37,7 @@ function oneAssignment(_record) {
   `
 }
 
-var months = ["January", "February, March, April, May, June, July, August, September, October, November, December"];
+// var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
 // function simpleAssignment(_record) {
 //   return `<div class="reminderslistItem">
@@ -45,6 +45,7 @@ var months = ["January", "February, March, April, May, June, July, August, Septe
 //             <p>${months[_record.date.m - 1]} ${_record.date.d}</p>
 //           </div>`;
 // }
+
 function simpleAssignment(_record) {
   var date = moment().add(1, `${_record.date.d}`).calendar();
   return `<div class="reminderslistItem">
@@ -54,11 +55,11 @@ function simpleAssignment(_record) {
 }
 
 
-
-
 // DATA UPDATER:
 // Fires every time a page changes
 document.getElementById('page').addEventListener('page', function (e) {
+
+  $('[data-toggle="datepicker"]').datepicker({ format: 'yyyy-mm-dd', autoHide: true });
 
   // If the current page is the todoListPage, grab the data for it
   // This needs some improvement
@@ -80,6 +81,8 @@ document.getElementById('page').addEventListener('page', function (e) {
   }
 
   else if (currPage == '/newTask') {
+
+
 
     // Create a new task based on the values
     document.getElementById('createNewTaskBtn').addEventListener('click', function() {
@@ -125,6 +128,11 @@ document.getElementById('page').addEventListener('page', function (e) {
         turnRed3();
       }
 
+      // var _year = document.getElementById('yearInput').value;
+      // var _month = document.getElementById('monthInput').value;
+      // var _day = document.getElementById('dayInput').value;
+
+      var _date = document.querySelector('input[name="dueDate"]').value;
 
       if (valid) {
         // All passed, now create the assignment
@@ -132,7 +140,7 @@ document.getElementById('page').addEventListener('page', function (e) {
         _assignment.push({
           id: 1000,
           name: _name,
-          date: {year:"", month:"", day:"",},
+          date: _date,
           percentage: _value,
           difficulty: _group1,
           priority: _group2,
@@ -171,8 +179,7 @@ var _assignment = [
   {
     id: 1,
     name: "Interactive Video Final",
-    // date: {y:'2018', m:'12', d:'05'},
-    date: {y:'2018', m:'12', d:'05'},
+    date: "2018-12-05",
     percentage: 30,
     complete: false,
     priority: "Medium",
@@ -181,7 +188,7 @@ var _assignment = [
   {
     id: 2,
     name: "Ergonomics Assignment 6",
-    date: {y:'2018', m:'12', d:'05'},
+    date: "2018-12-05",
     percentage: 20,
     complete: false,
     priority: "Low",
@@ -190,47 +197,11 @@ var _assignment = [
   {
     id: 3,
     name: "Interactive Systems Final",
-    date: {y:'2018', m:'12', d:'05'},
+    date: "2018-12-05",
     percentage: 50,
     complete: false,
     priority: "Low",
     difficulty: "Med"
   },
-  {
-    id: 4,
-    name: "Device Development Final",
-    date: {y:'2018', m:'12', d:'05'},
-    percentage: 100,
-    complete: false,
-    priority: "High",
-    difficulty: "Hard"
 
-  },  {
-    id: 5,
-    name: "Portfolio Final",
-    date: {y:'2018', m:'12', d:'05'},
-    percentage: 25,
-    complete: false,
-    priority: "Low",
-    difficulty: "Easy"
-
-  },  {
-    id: 5,
-    name: "Portfolio Final",
-    date: {y:'2018', m:'12', d:'05'},
-    percentage: 25,
-    complete: false,
-    priority: "Low",
-    difficulty: "Easy"
-
-  },  {
-    id: 5,
-    name: "Portfolio Final",
-    date: {y:'2018', m:'12', d:'05'},
-    percentage: 25,
-    complete: false,
-    priority: "Low",
-    difficulty: "Easy"
-
-  }
 ];

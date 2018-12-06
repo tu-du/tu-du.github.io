@@ -212,6 +212,9 @@ input:focus {
 
 .difficultySelect:hover {
   background-color: #003DAA;
+}
+
+.difficultySelect:hover label {
   color: #FFFDF5;
   font-weight: bold;
 }
