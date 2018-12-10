@@ -1,25 +1,23 @@
-# Review: To-do List
-Create a functional to-do list using HTML/CSS/JS
+# TUDU
+An organizational app to keep students on track.
 
-## HTML
-- Build a sample of a few items in a to-do list
-- Add a form to add new items
+## We Are TUDU!
 
-## CSS
-- Develop a responsive style for the list
-- Create styles for hovering, clicking and completing tasks
+- __Project Manager__ 💸 [Cathy Riani](https://github.com/cathyriani) [![alt text][image]][hyperlink]
 
-## Javascript
-- Store some sample tasks in an array using JSON
-- Add new items to the list using the form
-- Clicking an item indicates it as complete or incomplete
+  [hyperlink]: https://www.instagram.com/cathyriani/
+  [image]: https://raw.githubusercontent.com/juneate/classroom-collab/master/img/instagram.png
 
-## Next Steps:
+- __Interface Developer__ 💻 [Vivian Doan](https://github.com/viviandoan) [![alt text][image2]][hyperlink2]
 
-What other features could we use/create? Here are a few ideas:
+  [hyperlink2]: https://www.instagram.com/vivdoan/
+  [image2]: https://raw.githubusercontent.com/juneate/classroom-collab/master/img/instagram.png
 
-- Drag and drop items to prioritize?
-- Give them a status colour or progress indicator
-- Store the list items (local storage? database? etc)
-- Categorize our list
-- Error handling/styling?
+- __Application Developer__ 💃🏻 [Daniella Delgado](https://github.com/danidel92) [![alt text][image1]][hyperlink1]
+
+[hyperlink1]: https://www.instagram.com/daniellandelgado/
+[image1]: https://raw.githubusercontent.com/juneate/classroom-collab/master/img/instagram.png
+- Application Developer ✨ __Benjamin Banh__
+- UX/UI Designer ✨ __Sonica Katoch__
+- Graphic Designer ✨ __Geoffrey Guillermo__
+Hello
