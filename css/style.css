@@ -77,6 +77,7 @@ input:focus {
 .list {
   display: grid;
   grid-row-gap: 0.25em;
+  padding-top: 10%;
 }
 
 .listItem {
