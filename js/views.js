@@ -101,6 +101,7 @@ let calendarView = `
     <ul>
     <li class="monthname sec">October</li>
     <li class="monthname sec">November</li>
+    <li class="monthname cur">December</li>
       <li id="demo1"></li>
     </ul>
   </div>
