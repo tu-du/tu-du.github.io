@@ -1,4 +1,4 @@
-const cacheName = 'tudu-app';
+const cacheName = 'tudu-server';
 
 const staticAssets = [
   './',
