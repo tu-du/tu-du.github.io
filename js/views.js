@@ -92,65 +92,77 @@ let eventSelect = `
 `;
 
 let calendarView = `
-<ul>
-  <li class="monthname">November</li>
-  <li class="monthname sec">December</li>
-  <li class="monthname sec">January</li>
+<div class="calendarTitle">
+    <!-- <p>&#9776;</p> -->
+    <p>CALENDAR</p>
+  </div>
 
-</ul>
-</div>
+  <div class="month">
+    <ul>
+    <li class="monthname sec">October</li>
+    <li class="monthname sec">November</li>
+      <li id="demo1"></li>
+    </ul>
+  </div>
 
 <ul class="weekdays">
-  <li>S</li>
-  <li>M</li>
-  <li>T</li>
-  <li>W</li>
-  <li>T</li>
-  <li>F</li>
-  <li>S</li>
+<li week-day="sun">S</li>
+<li week-day="mon">M</li>
+<li week-day="tue">T</li>
+<li week-day="wed">W</li>
+<li week-day="thu">T</li>
+<li week-day="fri">F</li>
+<li week-day="sat">S</li>
 </ul>
 
-<ul class="days">
-  <li>1</li>
-  <li>2</li>
-  <li>3</li>
-  <li><span class="active">4</span></li>
-  <li>5</li>
-  <li>6</li>
-  <li>7</li>
-  <li>8</li>
-  <li>9</li>
-  <li>10</li>
-  <li>11</li>
-  <li>12</li>
-  <li>13</li>
-  <li>14</li>
-  <li>15</li>
-  <li>16</li>
-  <li>17</li>
-  <li>18</li>
-  <li>19</li>
-  <li>20</li>
-  <li>21</li>
-  <li>22</li>
-  <li>23</li>
-  <li>24</li>
-  <li>25</li>
-  <li>26</li>
-  <li>27</li>
-  <li>28</li>
-  <li>29</li>
-  <li>30</li>
-  <li>31</li>
-</ul>
 
-<ul class="bottom">
-  <li><img src="img/nav/calendar-selected.svg"></a></li>
-  <li><a href="/clickMe"><img src="img/nav/list.svg"></a></li>
-  <li><a href="/newTask"><img src="img/nav/add-task.svg"></a></li>
-  <li><a href="/remindMe"><img src="img/nav/reminder.svg"></a></li>
-  <li><a href="/profilePage"><img src="img/nav/profile.svg"></a></li>
-</ul>
+
+  <ul class="calendar">
+    <li data-date="blank"></li>
+    <li data-date="blank"></li>
+    <li data-date="blank"></li>
+    <li data-date="blank"></li>
+    <li data-date="blank"></li>
+    <li data-date="blank"></li>
+    <li data-date="2018-10-1">1</li>
+    <li data-date="2018-10-2">2</li>
+    <li data-date="2018-10-3">3</li>
+    <li data-date="2018-10-4">4</li>
+    <li data-date="2018-10-5">5</li>
+    <li data-date="2018-10-6">6</li>
+    <li data-date="2018-10-7">7</li>
+    <li data-date="2018-10-8">8</li>
+    <li data-date="2018-10-9">9</li>
+    <li data-date="2018-10-10">10</li>
+    <li data-date="2018-10-11">11</li>
+    <li data-date="2018-10-12">12</li>
+    <li data-date="2018-10-13">13</li>
+    <li data-date="2018-10-14">14</li>
+    <li data-date="2018-10-15">15</li>
+    <li data-date="2018-10-16">16</li>
+    <li data-date="2018-10-17">17</li>
+    <li data-date="2018-10-18">18</li>
+    <li data-date="2018-10-19">19</li>
+    <li data-date="2018-10-20">20</li>
+    <li data-date="2018-10-21">21</li>
+    <li data-date="2018-10-22">22</li>
+    <li data-date="2018-10-23">23</li>
+    <li data-date="2018-10-24">24</li>
+    <li data-date="2018-10-25">25</li>
+    <li data-date="2018-10-26">26</li>
+    <li data-date="2018-10-27">27</li>
+    <li data-date="2018-10-28">28</li>
+    <li data-date="2018-10-29">29</li>
+    <li data-date="2018-10-30">30</li>
+    <li data-date="blank"></li>
+  </ul>
+  <ul class="bottom">
+      <li><a href="/whatDay"><img src="img/nav/calendar.svg"></a></li>
+      <li><a href="/clickMe"><img src="img/nav/list.svg"></a></li>
+      <li><a href="/newTask"><img src="img/nav/add-task.svg"></a></li>
+      <li><img src="img/nav/reminder-selected.svg"></a></li>
+      <li><a href="/profilePage"><img src="img/nav/profile.svg"></a></li>
+  </ul>
 
 `;
 
