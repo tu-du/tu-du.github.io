@@ -28,93 +28,62 @@ let navigation = `
 <div class="container">
   <a href="/newTask"><input type="image" class="newTaskButton" src="img/icons/addtask-button.svg"></input></a>
 
-  <div class="list" id="assignment-list">
-    <!--
-    <div class="listItem">
-    <p class="listItemName">Interactive Systems Timeline</p>
-    <p class="dateDue">October 26</p>
-    <div class="sublist">
-    <p class="taskAttribute">High Priority</p>
-    <p class="taskAttribute">30%</p>
-    <p class="taskAttribute">Difficult</p>
+  <div class="list" id="assignment-list"></div>
+
+  <ul class="bottom">
+    <li><a href="/whatDay"><img src="img/nav/calendar.svg"></a></li>
+    <li><img src="img/nav/list-selected.svg"></li>
+    <li><a href="/newTask"><img src="img/nav/add-task.svg"></a></li>
+    <li><a href="/remindMe"><img src="img/nav/reminder.svg"></a></li>
+    <li><a href="/profilePage"><img src="img/nav/profile.svg"></a></li>
+  </ul>
+  `;
+
+  let eventSelect = `
+  <div class="navMenu">
+    <p class="closeMenu"><button><a href="/clickMe">Close</button></p></a>
+
+
+    <div class="navSection">
+      <h2>Pitch Presentation</h2>
+      <p>Due Today</p>
+      <p>9:00AM</p>
+    </div>
+
+    <div class="navSection">
+      <h2>Tasks</h2>
+    </div>
+
+    <div class="navSection">
+      <h2>Calendar</h2>
+    </div>
   </div>
-</div>
+  `;
 
-<div class="listItem">
-<p class="listItemName">Ergonomics Video Presentation</p>
-<p class="dateDue">November 2</p>
-<div class="sublist">
-<p class="taskAttribute">High Priority</p>
-<p class="taskAttribute">30%</p>
-<p class="taskAttribute">Difficult</p>
-</div>
-</div>
-
-<div class="listItem">
-<p class="listItemName">Portfolio Rough Draft Resume</p>
-<p class="dateDue">November 14</p>
-<div class="sublist">
-<p class="taskAttribute">High Priority</p>
-<p class="taskAttribute">30%</p>
-<p class="taskAttribute">Difficult</p>
-</div>
-</div>
--->
-</div>
-<ul class="bottom">
-  <li><a href="/whatDay"><img src="img/nav/calendar.svg"></a></li>
-  <li><img src="img/nav/list-selected.svg"></li>
-  <li><a href="/newTask"><img src="img/nav/add-task.svg"></a></li>
-  <li><a href="/remindMe"><img src="img/nav/reminder.svg"></a></li>
-  <li><a href="/profilePage"><img src="img/nav/profile.svg"></a></li>
-</ul>
-`;
-
-let eventSelect = `
-<div class="navMenu">
-  <p class="closeMenu"><button><a href="/clickMe">Close</button></p></a>
-
-
-  <div class="navSection">
-    <h2>Pitch Presentation</h2>
-    <p>Due Today</p>
-    <p>9:00AM</p>
-  </div>
-
-  <div class="navSection">
-    <h2>Tasks</h2>
-  </div>
-
-  <div class="navSection">
-    <h2>Calendar</h2>
-  </div>
-</div>
-`;
-
-let calendarView = `
-<div class="calendarTitle">
+  let calendarView = `
+  <div class="calendarTitle">
     <!-- <p>&#9776;</p> -->
     <p>CALENDAR</p>
   </div>
 
   <div class="month">
     <ul>
-    <li class="monthname sec">October</li>
-    <li class="monthname sec">November</li>
-    <li class="monthname cur">December</li>
+      <li class="monthname sec">October</li>
+      <li class="monthname sec">November</li>
+      <li class="monthname cur">December</li>
       <li id="demo1"></li>
     </ul>
   </div>
 
-<ul class="weekdays">
-<li week-day="sun">S</li>
-<li week-day="mon">M</li>
-<li week-day="tue">T</li>
-<li week-day="wed">W</li>
-<li week-day="thu">T</li>
-<li week-day="fri">F</li>
-<li week-day="sat">S</li>
-</ul>
+  <ul class="weekdays">
+    <li week-day="sun">S</li>
+    <li week-day="mon">M</li>
+    <li week-day="tue">T</li>
+    <li week-day="wed">W</li>
+    <li week-day="thu">T</li>
+    <li week-day="fri">F</li>
+    <li week-day="sat">S</li>
+  </ul>
 
 
 
@@ -158,27 +127,27 @@ let calendarView = `
     <li data-date="blank"></li>
   </ul>
   <ul class="bottom">
-      <li><a href="/whatDay"><img src="img/nav/calendar.svg"></a></li>
-      <li><a href="/clickMe"><img src="img/nav/list.svg"></a></li>
-      <li><a href="/newTask"><img src="img/nav/add-task.svg"></a></li>
-      <li><img src="img/nav/reminder-selected.svg"></a></li>
-      <li><a href="/profilePage"><img src="img/nav/profile.svg"></a></li>
+    <li><a href="/whatDay"><img src="img/nav/calendar.svg"></a></li>
+    <li><a href="/clickMe"><img src="img/nav/list.svg"></a></li>
+    <li><a href="/newTask"><img src="img/nav/add-task.svg"></a></li>
+    <li><img src="img/nav/reminder-selected.svg"></li>
+    <li><a href="/profilePage"><img src="img/nav/profile.svg"></a></li>
   </ul>
 
-`;
+  `;
 
-let addTask = `
-<div class="newTaskForm">
+  let addTask = `
+  <div class="newTaskForm">
 
-  <a href="/clickMe"><input type="image" class="closeWindow" src="img/icons/no.png"></input></a>
+    <a href="/clickMe"><input type="image" class="closeWindow" src="img/icons/no.png"></input></a>
 
-  <div class="taskInput" id="taskInputError">
-    <input type="text" placeholder="ENTER ASSIGNMENT NAME" id="assignmentNameInput">
-  </div>
+    <div class="taskInput" id="taskInputError">
+      <input type="text" placeholder="ENTER ASSIGNMENT NAME" id="assignmentNameInput">
+    </div>
 
-  <div class="taskInput">
-    <input type="number" class="taskInput" placeholder="ENTER PERCENTAGE VALUE" id="assignmentValueInput">
-  </div>
+    <div class="taskInput">
+      <input type="number" class="taskInput" placeholder="ENTER PERCENTAGE VALUE" id="assignmentValueInput">
+    </div>
 
     <p class="formSectionTitle">SELECT PRIORITY LEVEL</p>
 
@@ -200,40 +169,40 @@ let addTask = `
     </div>
 
 
-  <p class="formSectionTitle">SELECT DIFFICULTY LEVEL</p>
+    <p class="formSectionTitle">SELECT DIFFICULTY LEVEL</p>
 
-  <div class="checkboxContainer" id="radioSelection">
-    <div class="difficultySelect">
-      <input type="radio" id="radioSelection1" name="group1" value="Easy">
-      <label for="radioSelection1">EASY</label>
+    <div class="checkboxContainer" id="radioSelection">
+      <div class="difficultySelect">
+        <input type="radio" id="radioSelection1" name="group1" value="Easy">
+        <label for="radioSelection1">EASY</label>
+      </div>
+
+      <div class="difficultySelect">
+        <input type="radio" id="radioSelection2" name="group1" value="Moderate">
+        <label for="radioSelection2">MODERATE</label>
+      </div>
+
+      <div class="difficultySelect">
+        <input type="radio" id="radioSelection3" name="group1" value="Hard">
+        <label for="radioSelection3">HARD</label>
+      </div>
     </div>
 
-    <div class="difficultySelect">
-      <input type="radio" id="radioSelection2" name="group1" value="Moderate">
-      <label for="radioSelection2">MODERATE</label>
-    </div>
+    <p class="formSectionTitle">SELECT DEADLINE</p>
 
-    <div class="difficultySelect">
-      <input type="radio" id="radioSelection3" name="group1" value="Hard">
-      <label for="radioSelection3">HARD</label>
-    </div>
-  </div>
-
-  <p class="formSectionTitle">SELECT DEADLINE</p>
-
-  <!-- <div class="taskInput">
+    <!-- <div class="taskInput">
     <input type="number" class="taskInput" placeholder="ENTER MONTH (MM)" id="monthInput">
   </div>
   <div class="taskInput">
-    <input type="number" class="taskInput" placeholder="ENTER DAY (DD)" id="dayInput">
-  </div>
-  <div class="taskInput">
-    <input type="number" class="taskInput" placeholder="ENTER YEAR (YYYY)" id="yearInput">
-  </div> -->
+  <input type="number" class="taskInput" placeholder="ENTER DAY (DD)" id="dayInput">
+</div>
+<div class="taskInput">
+<input type="number" class="taskInput" placeholder="ENTER YEAR (YYYY)" id="yearInput">
+</div> -->
 
-  <input name="dueDate" data-toggle="datepicker" placeholder="SELECT ASSIGNMENT DEADLINE">
+<input name="dueDate" data-toggle="datepicker" placeholder="SELECT ASSIGNMENT DEADLINE">
 
-  </div>
+</div>
 
 
 </div>
@@ -256,56 +225,56 @@ let reminderPage = `
 
           <div id="all-reminders">
             <!-- <div class="reminderslistItem">
-              <h3>Pitch Presentation</h3>
-              <p>Lorem ipsum dolor sit amet.</p>
-            </div>
-
-            <div class="reminderslistItem">
-              <h3>Device Development HTML Code</h3>
-              <p>Lorem ipsum dolor sit amet.</p>
-            </div>
-
-            <div class="reminderslistItem">
-              <h3>Ergonomics Paper</h3>
-              <p>Lorem ipsum dolor sit amet.</p>
-            </div> -->
+            <h3>Pitch Presentation</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
           </div>
 
+          <div class="reminderslistItem">
+          <h3>Device Development HTML Code</h3>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
 
-        </div>
-      </div>
-    </div>
-    <ul class="bottom">
-      <li><a href="/whatDay"><img src="img/nav/calendar.svg"></a></li>
-      <li><a href="/clickMe"><img src="img/nav/list.svg"></a></li>
-      <li><a href="/newTask"><img src="img/nav/add-task.svg"></a></li>
-      <li><img src="img/nav/reminder-selected.svg"></a></li>
-      <li><a href="/profilePage"><img src="img/nav/profile.svg"></a></li>
-    </ul>
-    `;
-
-    var aboutMe = `
-    <div class="header"><h1>PROFILE</h1></div>
-
-    <div class="container">
-      <div class="profileContainer">
-        <div class="profileName"> BEATRICE FLORES
-        </div>
-        <div class="profilePic">
-          <img src="images/icons/beatrice.png"></img>
-        </div>
-        <div class="profileEmail">beatriceflores@georgebrown.ca
-        </div>
-        <div class="profileSchool">GEORGE BROWN COLLEGE
-        </div>
-      </div>
+        <div class="reminderslistItem">
+        <h3>Ergonomics Paper</h3>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div> -->
     </div>
 
-    <ul class="bottom">
-      <li><a href="/whatDay"><img src="img/nav/calendar.svg"></a></li>
-      <li><a href="/clickMe"><img src="img/nav/list.svg"></a></li>
-      <li><a href="/newTask"><img src="img/nav/add-task.svg"></a></li>
-      <li><a href="/remindMe"><img src="img/nav/reminder.svg"></a></li>
-      <li><img src="img/nav/profile-selected.svg"></a></li>
-    </ul>
-    `;
+
+  </div>
+</div>
+</div>
+<ul class="bottom">
+  <li><a href="/whatDay"><img src="img/nav/calendar.svg"></a></li>
+  <li><a href="/clickMe"><img src="img/nav/list.svg"></a></li>
+  <li><a href="/newTask"><img src="img/nav/add-task.svg"></a></li>
+  <li><img src="img/nav/reminder-selected.svg"></a></li>
+  <li><a href="/profilePage"><img src="img/nav/profile.svg"></a></li>
+</ul>
+`;
+
+var aboutMe = `
+<div class="header"><h1>PROFILE</h1></div>
+
+<div class="container">
+  <div class="profileContainer">
+    <div class="profileName"> BEATRICE FLORES
+    </div>
+    <div class="profilePic">
+      <img src="images/icons/beatrice.png"></img>
+    </div>
+    <div class="profileEmail">beatriceflores@georgebrown.ca
+    </div>
+    <div class="profileSchool">GEORGE BROWN COLLEGE
+    </div>
+  </div>
+</div>
+
+<ul class="bottom">
+  <li><a href="/whatDay"><img src="img/nav/calendar.svg"></a></li>
+  <li><a href="/clickMe"><img src="img/nav/list.svg"></a></li>
+  <li><a href="/newTask"><img src="img/nav/add-task.svg"></a></li>
+  <li><a href="/remindMe"><img src="img/nav/reminder.svg"></a></li>
+  <li><img src="img/nav/profile-selected.svg"></a></li>
+</ul>
+`;
