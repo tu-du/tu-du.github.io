@@ -17,6 +17,34 @@ An organizational app to keep students on track.
 
 [hyperlink1]: https://www.instagram.com/daniellandelgado/
 [image1]: https://raw.githubusercontent.com/juneate/classroom-collab/master/img/instagram.png
-- Application Developer ✨ __Benjamin Banh__
-- UX/UI Designer ✨ __Sonica Katoch__
-- Graphic Designer ✨ __Geoffrey Guillermo__
+
+- __UX/UI Designer__ ⚡ [Sonica Katoch](https://github.com/sawnkat) [![alt text][image1]][hyperlink1]
+
+[hyperlink1]: https://www.instagram.com/sawnkat/
+[image1]: https://raw.githubusercontent.com/juneate/classroom-collab/master/img/instagram.png
+
+
+- __Interface Developer__ 🔥 [Benjamin Banh](https://github.com/benjaminbanh) [![alt text][image1]][hyperlink1]
+
+[hyperlink1]: https://www.instagram.com/benjaminbanh/
+[image1]: https://raw.githubusercontent.com/juneate/classroom-collab/master/img/instagram.png
+
+- __Graphic Designer__ 😑 [Geoffrey Guillermo](https://github.com/geoffreyian) [![alt text][image1]][hyperlink1]
+
+[hyperlink1]: https://www.instagram.com/shutupdeborah/
+[image1]: https://raw.githubusercontent.com/juneate/classroom-collab/master/img/instagram.png
+
+## Download Links
+
+https://tu-du.github.io/tudu-server/
+https://tu-du.github.io/tudu-web/ 
+
+## Room for Improvement
+
+- connect data input from "Add Task" to Calendar page in order to display which dates have assignments due
+- cleaner interaction to delete a task (want to do a swipe to delete)
+- organize list of assignments by algorithm that determines importance of assignment (based on date due, percentage worth, and level of difficulty)
+- include data storage with profile/user
+- Google calendar integrations
+
+
