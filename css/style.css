@@ -11,7 +11,7 @@ h1 {
   padding: 1em 0;
   text-align: center;
   font-family: 'Source Sans Pro', sans-serif;
-  color: #FFFDF5;
+  color: white;
   background-color: #003DAA;
   letter-spacing: 2px;
   z-index: 99;
@@ -55,6 +55,7 @@ input:focus {
   outline: none;
 }
 
+
 .container {
   padding-top: 4em;
   padding-left: 2em;
@@ -73,7 +74,9 @@ input:focus {
   position:fixed;
   z-index: 99;
 }
-
+.remindersContainer{
+  padding-top: 1.7em;
+}
 .list {
   display: grid;
   grid-row-gap: 0.25em;
@@ -83,6 +86,9 @@ input:focus {
 .listItem {
   font-size: 18px;
   padding-top: 1em;
+  border: 0px solid;
+  padding: 10px;
+  box-shadow: 0px 0px 1px 0px #888888;
 }
 
 .dateDue {
@@ -102,20 +108,21 @@ input:focus {
   padding: 1em 0;
   font-size: 15px;
   grid-template-columns: 1fr 1fr 1fr;
-  border-bottom: 1px solid #466DDB;
+  /* border-bottom: 1px solid #466DDB; */
 }
 
 .taskAttribute {
   display: flex;
   position: relative;
   color: #466DDB;
-  border-radius: 20px;
-  border: 2px solid #466DDB;
+  border-right: 1px solid rgb(208,208,208, 0.5);
   width: 100px;
   justify-content: center;
   padding: 0.5em;
+  padding-right: 0.2em;
   font-size: 12px;
   z-index: -1;
+  text-align: center;
 
 }
 
@@ -175,7 +182,7 @@ input:focus {
 }
 
 .closeWindow {
-  width: 40px;
+  width: 35px;
   height: auto;
   border: none;
   position: absolute;
@@ -282,7 +289,9 @@ input:focus {
   border-right: 1px solid #0D40A4;
   border-bottom: 10px solid #0D40A4;
 }
-
+.reminderslistItem p{
+  font-size: 2em;
+}
 .profilePic {
   padding-bottom: -2px;
 
@@ -341,18 +350,21 @@ input:focus {
   width:100%;
   background-color: #003DAA;
   z-index: 99;
+  border-bottom: solid;
+  border-width: 0.5px;
+  border-color: white;
 }
 .bottom {
   position: fixed;
   width: 100%;
-  background-color: white;
+  background-color: #003DAA;
   padding: 15px;
   bottom: 0;
   left: 0;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  border-top: 1px solid lightgrey;
-  box-shadow: 0pxpx 40px 2px lightgrey;
+  border-top: 1px solid white;
+  box-shadow: 0pxpx 40px 2px white;
 }
 
 .bottom li {
@@ -360,7 +372,7 @@ input:focus {
   margin-left: auto;
   margin-right: auto;
   width: 35%;
-  height: 35%;
+  height: 30px;
 }
 
 .deleteButton {

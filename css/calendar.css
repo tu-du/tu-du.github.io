@@ -9,15 +9,20 @@ body{
   background-color: #FFFDF5;
 }
 .calendarTitle {
-  padding: 30px 20px 10px 10px;
   text-align: center;
   font-size: 2em;
-  font-family: Helvetica, sans-serif;
+  font-family: Helvetica;
   font-weight: bold;
   background: #003daa;
   letter-spacing: 2px;
   color: #fff;
   width: 100%;
+  border-bottom: solid;
+  border-width: 0.5px;
+  border-color: white
+  height: 57px;
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
 
 .calendarTitle p {
@@ -30,6 +35,7 @@ body{
     text-align: left;
     font-size: 1em;
     color: #000000;
+    opacity: 0.9
 
 }
 
@@ -105,8 +111,14 @@ body{
 }
 
 h1{
-  text-align: center;
-  font-size: 24px;
-  color: black;
-  padding-top: 6%;
+  padding: 30px 20px 10px 10px;
+    text-align: center;
+    font-size: 2em;
+    font-family: Helvetica, sans-serif;
+    font-weight: normal;
+    background: #003daa;
+    letter-spacing: 2px;
+    color: #fff;
+    width: 100%;
+    display: inline-block;
 }
