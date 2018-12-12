@@ -1,5 +1,5 @@
 # TUDU
-An organizational app to keep students on track.
+An organizational app to keep students on track. 
 
 ## We Are TUDU!
 
